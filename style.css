@@ -1,0 +1,199 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid'; 
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('fontes/Bebas-Regular.otf') format('opentype');  
+}
+
+
+:root{
+    --cor0: #E2E3B6;
+    --cor1: #abe4c3;
+    --cor2: #40C77B;
+    --cor3: #2F945B;
+    --cor4: #1A5C38;
+    --cor5: #217547;
+
+    --fonte-padrao: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --fonte-android: 'idroid', cursive;
+    /* modo de usar fontes */
+   
+}
+
+p {
+    text-align: justify;
+    font-size: 1em;
+    text-indent: 30px;
+    padding: 3px 10px 5px 8px;
+    line-height: 2em;
+    
+}
+
+h1.principal {
+            font-family: 'Bebas';
+            font-size: 45px;
+            font-weight: lighter;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.61);
+}
+
+a.info {
+        color: var(--cor4);
+        font-weight: bold;
+        text-decoration: none;    
+}
+
+a.info:hover {
+    background-color: var(--cor1);
+}
+
+body{
+    background-color: var(--cor0);   
+}
+
+header{
+    background-image: linear-gradient(to bottom, #2F945B, #1A5C38);
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Verdana, Geneva, Tahoma, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: -8px ;
+    min-height: 150px;
+}
+
+header >p {
+        font-size: 15px;
+        text-align: center;
+        font-size: 0.9em;
+        }
+
+nav > a {
+        color: white;
+        text-decoration: none;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 700; 
+        transition-duration: 0.5s;
+        border-radius: 5px;
+        }
+
+nav > a:hover{
+                background-color: var(--cor3);
+                padding:11px;
+            }
+
+.text-element{
+    font-family: var(--fonte-android), Arial, sans-serif;
+    color: var(--cor4);
+            }
+
+h1{
+    font-family: var(--fonte-android);
+    font-weight: lighter;
+    font-size: x-large;
+    }
+
+main{
+    background-color: white;
+    padding: 30px;
+    margin: 9px auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 3px 5px black;
+    font-family: var(--fonte-padrao);
+    min-width: 320px;
+    max-width: 800px;  
+}
+
+.imgs {
+    display: block;
+    margin: auto;
+}
+
+h3{
+    background-image: linear-gradient(to right, #abe4c3, white);
+    
+}
+
+div.mais {
+    background-color: var(--cor3);
+    color: white;
+    font-weight: bolder;
+    padding: 0px;
+    height: 35px;  
+    border-radius: 7px 7px 0px 0px;
+    text-indent: 7px;
+}
+
+section.aprender {
+    background-color: var(--cor1);
+    border-radius: 7px 7px;
+    margin: 10px;
+    padding: 1px;  
+}
+
+.video {
+    padding: 12px;
+    background-color: var(--cor4);
+    text-align: center;
+    display: block;
+    margin: 12px;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    }
+
+  li {
+    padding-left: 1em;
+    text-indent: 6px;
+  }
+
+ul > li:before {
+    content: " ✔"    
+}
+
+.doce {
+    text-decoration: underline;
+}
+
+.androidhistory {
+    color: var(--cor4);
+    font-weight: bold;
+    text-decoration: none;   
+
+}
+
+.androidhistory:hover {
+    background-color: white;
+}
+
+footer >p {
+    background-color: var(--cor4);
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 12px;
+    margin:  6px -10px -8px -10px;
+    
+}
+.contato {
+    text-decoration: none; 
+    color: white;
+    text-decoration: underline;
+}
+
+
+.contato:hover {
+    background-color: var(--cor5);
+    
+}
